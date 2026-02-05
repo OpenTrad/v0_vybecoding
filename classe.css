@@ -1,0 +1,13 @@
+.boutons-navigation{
+    display: none;
+    gap: 20px;
+}
+
+.choix-navigation{
+    width: 30%;
+    max-width: 30%;
+    flex: 1; 
+    border: 1px solid #006eff; 
+    padding: 10px; 
+    border-radius: 5px;
+}

@@ -1,0 +1,202 @@
+/* Style pour l'en-tête : 10% de la hauteur de la fenêtre, centré */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+/* Style pour le pied de page : 10% de la hauteur de la fenêtre, centré */
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+/* Style pour la section principale : 80% de la hauteur de la fenêtre, en flex pour les colonnes */
+.body {
+    width: 100%;
+    display: flex;
+    margin : 0px;
+    padding : 0px;
+    font-family: Arial, sans-serif; /* Ajout de la police pour tout le document */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.titre-state0 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1mm solid rgb(0, 0, 0); /* 1px = épaisseur, solid = style, black = couleur */
+}
+
+.c0 {
+    width: 95%;
+    height: 100%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.c1-state0 {
+    width: 100%;          /* Prend toute la largeur disponible */
+    max-width: 50%;       /* Limite à 40% de la largeur du parent */
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box; /* Inclut le padding et la bordure dans le calcul de la largeur */
+    justify-content: center;
+    align-items: center;
+    border: 2mm solid rgb(0, 0, 0); /* 1px = épaisseur, solid = style, black = couleur */
+    color: rgb(218, 200, 124);
+}
+
+.c2-state0 {
+    width: 100%;          /* Prend toute la largeur disponible */
+    max-width: 50%;       /* Limite à 40% de la largeur du parent */
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box; /* Inclut le padding et la bordure dans le calcul de la largeur */
+    justify-content: center;
+    align-items: center;
+    border: 2mm solid rgb(0, 0, 0); /* 1px = épaisseur, solid = style, black = couleur */
+    color: rgb(218, 200, 124);
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 950px; /* ou la hauteur souhaitée */
+    overflow: hidden; /* Empêche le débordement */
+}
+
+.langues-dispo{
+    margin: 10pt;
+    padding: 10pt;
+}
+
+.bouton-langue {
+    background-color: #4CAF50; /* Vert */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.bouton-langue:hover {
+    background-color: #45a049; /* Vert plus foncé au survol */
+}
+
+.bouton-langue:active {
+    background-color: #3e8e41; /* Vert encore plus foncé quand cliqué */
+}
+
+
+.navigation-pdf {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.navigation-pdf button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#numero-page {
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+#pdf-trad-viewer {
+    position: relative; /* Obligatoire pour le positionnement absolu des commentaires */
+    width: 100%;
+    height: 950px; /* Adapte à ta mise en page */
+    overflow: hidden;
+}
+
+.commentaire {
+    position: absolute;
+    background-color: yellow;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 12px;
+    max-width: 200px;
+    word-wrap: break-word;
+    transform: translate(-50%, -50%); /* Centre le commentaire sur le point de clic */
+    pointer-events: none; /* Permet de cliquer à travers le commentaire */
+}
+
+/* Style du point de commentaire */
+.point-commentaire {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/* Style de l'infobulle (créée dynamiquement en JS) */
+.infobulle-commentaire {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 15;
+    display: none;
+}
+
+/* Style de la bulle permanente */
+.bulle-commentaire {
+    position: absolute;
+    background-color: yellow;
+    color: black; /* Texte en noir */
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 200px;
+    word-wrap: break-word;
+    z-index: 20;
+    display: none;
+}
+
+
+
+
+
